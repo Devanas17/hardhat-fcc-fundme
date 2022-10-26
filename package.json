@@ -16,11 +16,11 @@
     "prettier-plugin-solidity": "^1.0.0-beta.19"
   },
   "scripts": {
-    "test": "hardhat test",
-    "test:staging": "hardhat test --network goerli",
+    "test": "npx hardhat test",
+    "test:staging": "npx hardhat test --network goerli",
     "lint": "solhint 'contracts/*.sol'",
-    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
-    "format": "prettier --write .",
-    "coverage": "hardhat coverage"
+    "lint:fix": "npx solhint 'contracts/**/*.sol' --fix",
+    "format": "npx prettier --write .",
+    "coverage": "npx hardhat coverage"
   }
 }
